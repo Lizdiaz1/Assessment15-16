@@ -1,0 +1,171 @@
+{
+  "1": {
+    "endpoint": "1 - Get all the artists",
+    "request": {
+      "method": "GET",
+      "URL": "/artists",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "2": {
+    "endpoint": "2 - Get a specific artist's details based on artistId",
+    "request": {
+      "method": "GET",
+      "URL": "/artists/:artistId",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "3": {
+    "endpoint": "3 - Add an artist",
+    "request": {
+      "method": "POST",
+      "URL": "/artists",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": true
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 201,
+      "body": true
+    }
+  },
+  "4": {
+    "endpoint": "4 - Edit a specified artist by artistId",
+    "request": {
+      "method": "PUT",
+      "URL": "/artists/:artistId",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": true
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "5": {
+    "endpoint": "5 - Get all the paintings of a specific artist based on artistId",
+    "request": {
+      "method": "GET",
+      "URL": "/artists/:artistId/paintings",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "6": {
+    "endpoint": "6 - Get all the paintings of a specific year",
+    "request": {
+      "method": "GET",
+      "URL": "/paintings/year/:year",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "7": {
+    "endpoint": "7 - Get all the information of a specified painting by paintingId",
+    "request": {
+      "method": "GET",
+      "URL": "/paintings/:paintingId",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "8": {
+    "endpoint": "8 - Add a painting to a specific artist based on artistId",
+    "request": {
+      "method": "POST",
+      "URL": "/artists/:artistId/paintings",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": true,
+        "year": true
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 201,
+      "body": true
+    }
+  },
+  "9": {
+    "endpoint": "9 - Delete a specified painting by paintingId",
+    "request": {
+      "method": "DELETE",
+      "URL": "/paintings/:paintingId",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  }
+}
